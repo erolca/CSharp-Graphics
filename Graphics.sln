@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Use enum type categorize ob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication_4", "ConsoleApplication_4\ConsoleApplication_4.csproj", "{9F6B2C58-EF2A-4412-B536-7A78788539D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication_5", "ConsoleApplication_5\ConsoleApplication_5.csproj", "{53D9D136-F1C2-4E01-B701-96F7F9659EF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{9F6B2C58-EF2A-4412-B536-7A78788539D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F6B2C58-EF2A-4412-B536-7A78788539D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F6B2C58-EF2A-4412-B536-7A78788539D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D9D136-F1C2-4E01-B701-96F7F9659EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D9D136-F1C2-4E01-B701-96F7F9659EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D9D136-F1C2-4E01-B701-96F7F9659EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D9D136-F1C2-4E01-B701-96F7F9659EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
