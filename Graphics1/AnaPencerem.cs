@@ -15,12 +15,17 @@ namespace Graphics
         public int x;
         public int y;
 
+        Image resim;
+
         public AnaPencerem(int width, int height)
         {
             DoubleBuffered = true;
             Height = height;
             Width = width;
             Text = "Ana Pencere";
+            resim = Image.FromFile("mc_motors.jpeg");
+
+
             Paint += AnaPencerem_Paint;
             MouseMove += AnaPencerem_MouseMove;
             MouseDown += AnaPencerem_MouseDown;
@@ -30,7 +35,7 @@ namespace Graphics
         {
             x = e.X;
             y = e.Y ;
-            Invalidate();
+           // Invalidate();
 
         }
 
@@ -48,21 +53,23 @@ namespace Graphics
             System.Drawing.Graphics cizimaraci = e.Graphics;
 
             cizimaraci.DrawRectangle(Pens.Blue,x,y,width,height);
+            //
+           // e.Graphics.DrawImage(resim,100,100,128,120);
 
             //
 
-            System.Drawing.Graphics graphicsObj;
+            //System.Drawing.Graphics graphicsObj;
 
-            graphicsObj = this.CreateGraphics();
+            //graphicsObj = this.CreateGraphics();
 
-            Pen myPen = new Pen(System.Drawing.Color.Red, 5);
-            Rectangle myRectangle = new Rectangle(20, 20, 250, 200);
+            //Pen myPen = new Pen(System.Drawing.Color.Red, 5);
+            //Rectangle myRectangle = new Rectangle(20, 20, 250, 200);
            
-            graphicsObj.DrawRectangle(myPen, myRectangle);
+            //graphicsObj.DrawRectangle(myPen, myRectangle);
 
-            myPen = new Pen(System.Drawing.Color.Green, 5);
-            myRectangle = new Rectangle(20, 20, 250, 200);
-            graphicsObj.DrawEllipse(myPen, myRectangle);
+            //myPen = new Pen(System.Drawing.Color.Green, 5);
+            //myRectangle = new Rectangle(20, 20, 250, 200);
+            //graphicsObj.DrawEllipse(myPen, myRectangle);
 
         }
     }
